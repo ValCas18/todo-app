@@ -1,0 +1,23 @@
+:root {
+}
+
+.App {
+	text-align: center;
+	min-height: 100vh;
+	box-sizing: border-box;
+	margin: 0;
+}
+
+.bg-book {
+	background: rgb(255, 134, 200);
+	background: linear-gradient(
+		90deg,
+		rgba(255, 134, 200, 1) 0%,
+		rgba(255, 191, 129, 1) 50%,
+		rgba(255, 134, 200, 1) 100%
+	);
+	background-size: cover;
+	width: auto;
+	min-height: 200px;
+	background-repeat: no-repeat;
+}
