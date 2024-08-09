@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap");
+.reenie-beanie-regular {
+	font-family: "Reenie Beanie", cursive;
+	font-weight: 400;
+	font-style: normal;
+}
+
 :root {
 }
 
@@ -6,6 +13,7 @@
 	min-height: 100vh;
 	box-sizing: border-box;
 	margin: 0;
+	padding: 0;
 }
 
 .bg-book {
@@ -20,4 +28,39 @@
 	width: auto;
 	min-height: 200px;
 	background-repeat: no-repeat;
+}
+
+.postit {
+	width: 300px;
+	height: 300px;
+	box-shadow: 5px 7px 7px rgb(33, 33, 33, 0.7);
+}
+
+.postit:nth-child(even) {
+	transform: rotate(-3deg);
+	position: relative;
+	top: -5px;
+	background-color: paleturquoise;
+}
+
+.postit:nth-child(odd) {
+	transform: rotate(3deg);
+	position: relative;
+	top: 5px;
+	background-color: palegoldenrod;
+}
+
+.postit:nth-child(4n) {
+	transform: rotate(10deg);
+	position: relative;
+	top: 5px;
+	background-color: #f4989c;
+}
+
+.postit:nth-child(3n) {
+	transform: rotate(-3deg);
+	position: relative;
+	top: 5px;
+
+	background-color: palegreen;
 }
