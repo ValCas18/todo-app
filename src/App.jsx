@@ -14,7 +14,7 @@ function App() {
 	return (
 		<div className="App">
 			<div className="bg-book"></div>
-			<SearchBar handleChange={handleChange} input={input} />
+			<SearchBar handleChange={handleChange} />
 			<List />
 		</div>
 	);
