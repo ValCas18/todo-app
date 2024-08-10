@@ -64,3 +64,7 @@
 
 	background-color: palegreen;
 }
+
+.formControl {
+	border: 2px solid black;
+}
