@@ -14,7 +14,9 @@ function App() {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		setTodo([...todo, input]);
+		if (input !== "") {
+			setTodo([...todo, input]);
+		}
 		setInput("");
 	};
 
@@ -25,7 +27,7 @@ function App() {
 
 	return (
 		<div className="App">
-			<SearchBar handleChange={handleChange} handleSubmit={handleSubmit} />
+			<SearchBar input={input} handleChange={handleChange} handleSubmit={handleSubmit} />
 			<List todo={todo} handleDelete={handleDelete} />
 		</div>
 	);
