@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap");
-.reenie-beanie-regular {
+
+.font {
 	font-family: "Reenie Beanie", cursive;
-	font-weight: 400;
-	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 40px;
 }
 
 :root {
@@ -34,6 +36,7 @@
 	width: 300px;
 	height: 300px;
 	box-shadow: 5px 7px 7px rgb(33, 33, 33, 0.7);
+	transition: transform 0.3s linear;
 }
 
 .postit:nth-child(even) {
@@ -50,19 +53,23 @@
 	background-color: palegoldenrod;
 }
 
-.postit:nth-child(4n) {
-	transform: rotate(10deg);
-	position: relative;
-	top: 5px;
-	background-color: #f4989c;
-}
-
 .postit:nth-child(3n) {
 	transform: rotate(-3deg);
 	position: relative;
-	top: 5px;
-
 	background-color: palegreen;
+}
+
+.postit:nth-child(4n) {
+	transform: rotate(10deg);
+	position: relative;
+	background-color: #f4989c;
+}
+
+.postit:hover {
+	transform: scale(1.3);
+	position: relative;
+	z-index: 5;
+	box-shadow: 10px 10px 7px rgb(0, 0, 0, 0.7);
 }
 
 .formControl {
