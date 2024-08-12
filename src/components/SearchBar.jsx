@@ -1,5 +1,6 @@
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+
 import { Col, Form, InputGroup, Row } from "react-bootstrap";
 
 const SearchBar = ({ handleChange, handleSubmit, input }) => {
@@ -15,11 +16,11 @@ const SearchBar = ({ handleChange, handleSubmit, input }) => {
 								value={input}
 								type="search"
 								id="input"
-								placeholder="scrivi"
+								placeholder="Add something to do..."
 								onChange={handleChange}
 							></Form.Control>
 							<button className="rounded-5 px-3 ms-2" type="submit" htmlFor="input">
-								<FontAwesomeIcon icon={faMagnifyingGlass} />
+								<FontAwesomeIcon icon={faPlus} />
 							</button>
 						</InputGroup>
 					</Col>

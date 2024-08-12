@@ -28,6 +28,7 @@ function App() {
 	return (
 		<div className="App">
 			<SearchBar input={input} handleChange={handleChange} handleSubmit={handleSubmit} />
+			{/* <List ? List : Listfinta> */}
 			<List todo={todo} handleDelete={handleDelete} />
 		</div>
 	);
