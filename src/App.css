@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 
 .font {
 	font-family: "Reenie Beanie", cursive;
@@ -7,6 +8,13 @@
 	line-height: 40px;
 }
 
+.titleFont {
+	font-family: "Permanent Marker", cursive;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 5em;
+	text-shadow: 4px 8px 4px black;
+}
 /* :root {
 } */
 
@@ -16,6 +24,9 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	background-image: url(./assets/josephine-bredehoft-KsAo8ouBn8A-unsplash.jpg);
+	background-size: cover;
+	overflow-x: hidden;
 }
 
 .bg-book {
@@ -54,7 +65,7 @@
 }
 
 .postit:nth-child(3n) {
-	transform: rotate(-3deg);
+	transform: rotate(-5deg);
 	position: relative;
 	background-color: palegreen;
 }
@@ -90,4 +101,9 @@
 	background-color: rgba(255, 255, 255, 0.63);
 	border: 1px solid green;
 	border-radius: 50px;
+}
+
+.plusBtn {
+	min-width: 70px;
+	min-height: 40px;
 }
