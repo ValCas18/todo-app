@@ -3,7 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 const List = ({ todo, handleDelete }) => {
 	return (
 		<Container>
-			<Row className="gy-3 justify-content-center">
+			<Row className="gy-3 justify-content-center gap-2">
 				{todo &&
 					todo
 						.filter((a, index) => index <= 7)

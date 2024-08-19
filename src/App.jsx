@@ -3,6 +3,7 @@ import { useState } from "react";
 import "./App.css";
 import List from "./components/List";
 import SearchBar from "./components/SearchBar";
+import Placeholder from "./components/Placeholder";
 
 function App() {
 	const [input, setInput] = useState("");
@@ -28,8 +29,7 @@ function App() {
 	return (
 		<div className="App">
 			<SearchBar input={input} handleChange={handleChange} handleSubmit={handleSubmit} />
-			{/* <List ? List : Listfinta> */}
-			<List todo={todo} handleDelete={handleDelete} />
+			{todo.length === 0 ? <Placeholder /> : <List todo={todo} handleDelete={handleDelete} />}
 		</div>
 	);
 }
