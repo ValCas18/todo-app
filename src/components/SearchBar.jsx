@@ -6,7 +6,7 @@ import { Col, Form, InputGroup, Row } from "react-bootstrap";
 const SearchBar = ({ handleChange, handleSubmit, input }) => {
 	return (
 		<div>
-			<h1 className="mt-4 text-white titleFont">To Do List</h1>
+			<h1 className="mt-5 text-white titleFont">To Do List</h1>
 			<Form onSubmit={handleSubmit}>
 				<Row className="justify-content-center mt-4 mb-5">
 					<Col xs={10} md={4} xl={3} className="mb-3">
