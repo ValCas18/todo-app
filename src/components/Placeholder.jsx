@@ -9,7 +9,7 @@ const Placeholder = () => {
 						<p className="font px-1">Welcome!</p>
 					</div>
 				</Col>
-				<Col className="postit p-2 d-flex flex-column justify-content-center" xs={12} md={4} lg={3}>
+				<Col className="postit p-1 d-flex flex-column justify-content-center" xs={12} md={4} lg={3}>
 					<div className="d-flex justify-content-center align-items-center">
 						<p className="font px-1">This is my To-Do List App! Please enjoy!</p>
 					</div>
