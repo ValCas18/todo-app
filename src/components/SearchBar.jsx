@@ -22,7 +22,7 @@ const SearchBar = ({ handleChange, handleSubmit, input }) => {
 						</InputGroup>
 					</Col>
 					<Col xs={3} md={1} className="d-flex justify-content-center p-0">
-						<button className="plusBtn rounded-5 ms-3 mb-3" type="submit" htmlFor="input">
+						<button className="plusBtn rounded-5 ms-2 mb-3" type="submit" htmlFor="input">
 							<FontAwesomeIcon icon={faPlus} />
 						</button>
 					</Col>
